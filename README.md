@@ -1,2 +1,3 @@
 # AnalyseLinguistiqueTwitter
-Analyse Linguistique d'un compte Twitter donnée.
+
+Analyse linguistique d'un compte Twitter donnée.
