@@ -1,0 +1,23 @@
+{
+  "name": "analyselinguistiquetwitter",
+  "version": "1.0.0",
+  "description": "Analyse linguistique d'un compte Twitter donnée.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demangejeremy/AnalyseLinguistiqueTwitter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demangejeremy/AnalyseLinguistiqueTwitter/issues"
+  },
+  "homepage": "https://github.com/demangejeremy/AnalyseLinguistiqueTwitter#readme",
+  "dependencies": {
+    "puppeteer": "^2.0.0",
+    "twitter": "^1.7.1"
+  }
+}
