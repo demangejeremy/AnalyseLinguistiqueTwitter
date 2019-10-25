@@ -6,41 +6,39 @@
 //
 /////////////////////////////////////////
 
-var Twitter = require('twitter');
-var config = require('./config.js');
-var T = new Twitter(config);
+// Declaration prealable
+const puppeteer = require('puppeteer');
 
-// Set up your search parameters
-var params = {
-  q: '#nodejs',
-  count: 10,
-  result_type: 'recent',
-  lang: 'en'
-}
+// Declaration des variables
+let username = "demangejeremy";
 
-// Initiate your search using the above paramaters
-T.get('search/tweets', params, function(err, data, response) {
-  // If there is no error, proceed
-  if(!err){
-    // Loop through the returned tweets
-    for(let i = 0; i < data.statuses.length; i++){
-      // Get the tweet Id from the returned data
-      let id = { id: data.statuses[i].id_str }
-      // Try to Favorite the selected Tweet
-      T.post('favorites/create', id, function(err, response){
-        // If the favorite fails, log the error message
-        if(err){
-          console.log(err[0].message);
-        }
-        // If the favorite is successful, log the url of the tweet
-        else{
-          let username = response.user.screen_name;
-          let tweetId = response.id_str;
-          console.log('Favorited: ', `https://twitter.com/${username}/status/${tweetId}`)
-        }
-      });
-    }
-  } else {
-    console.log(err);
-  }
-})
+
+// Lancement du script general
+(async () => {
+
+    // Lancement du navigateur    
+    const browser = await puppeteer.launch({
+        headless: false,
+        args: ['--lang=fr-FR,fr']
+    });
+    const page = await browser.newPage();
+
+    // Acces a la page de Twitter
+    await page.goto(`https://www.twitter.com/${username}`);
+
+    // Fonction pour recuperer un tweet
+    const result = await page.evaluate(() => {
+        const anchors_node_list = document.querySelectorAll('p.tweet-text');
+        const anchors = [...anchors_node_list];
+        return anchors.map(link => link.innerText);
+    });
+
+    console.log(result);
+
+    // Clique sur le bouton
+    // await page.click('#stream-item-tweet-1185062702126731264 > div.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.dismissible-content.original-tweet.js-original-tweet.has-cards.cards-forward > div.content > div.js-tweet-text-container > p');
+
+    // Fermer le navigateur
+    // await browser.close();
+    
+})();
