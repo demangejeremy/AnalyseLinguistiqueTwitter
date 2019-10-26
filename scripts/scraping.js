@@ -8,29 +8,11 @@
 
 // Declaration prealable
 const puppeteer = require('puppeteer');
+const fs = require("fs");
 
 // Declaration des variables
 let username = "demangejeremy";
-
-// Fonction pour scroller notre page
-async function autoScroll(page){
-    await page.evaluate(async () => {
-        await new Promise((resolve, reject) => {
-            var totalHeight = 0;
-            var distance = 500;
-            var timer = setInterval(() => {
-                var scrollHeight = document.body.scrollHeight;
-                window.scrollBy(0, distance);
-                totalHeight += distance;
-
-                if(totalHeight >= scrollHeight){
-                    clearInterval(timer);
-                    resolve();
-                }
-            }, 2000);
-        });
-    });
-}
+let nbTweets = 40;
 
 
 // Lancement du script general
@@ -47,7 +29,34 @@ async function autoScroll(page){
     await page.goto(`https://www.twitter.com/${username}`);
 
     // Scroller notre page
-    await autoScroll(page);
+    console.log('Chargement en cours...');
+    let loop = true;
+    while (loop) {
+
+        await page.waitFor(2000)
+
+
+            let calcul = await page.evaluate(async() => {
+                var defilement = 100;
+                let anchors_node_list;
+                let anchors;
+                let resultat;
+                anchors_node_list = document.querySelectorAll('p.tweet-text');
+                anchors = [...anchors_node_list];
+                window.scrollBy(0, defilement);
+                defilement += 4000;
+                resultat = anchors.map(i => i.innerText);
+                return resultat;
+            });
+
+
+            console.log(`Calcul en cours : ${calcul.length} / ${nbTweets}`);
+
+            // Condition d'arret
+            if(calcul.length > nbTweets - 1) {
+                loop = false;
+            }
+    }
 
     // Fonction pour recuperer un tweet
     const result = await page.evaluate(() => {
@@ -56,12 +65,27 @@ async function autoScroll(page){
         return anchors.map(i => i.innerText);
     });
 
-    console.log(result.length);
+    // Nom du fichier a ecrire
+    let nomFichier = `analyse-${username}.txt`;
 
-    // Clique sur le bouton
-    // await page.click('#stream-item-tweet-1185062702126731264 > div.tweet.js-stream-tweet.js-actionable-tweet.js-profile-popup-actionable.dismissible-content.original-tweet.js-original-tweet.has-cards.cards-forward > div.content > div.js-tweet-text-container > p');
+    // Donnees du fichier
+    let stockage = "";
+
+    // Boucle sur les textes pour construire notre fichier
+    for(let i in result) {
+        stockage += `**** *${username} *tweet${i} \r\n`;
+        stockage += result[i];
+        stockage += `\r\n\r\n`;
+        if (i >= nbTweets - 1) break;
+    }
+
+    // Ecriture dans un fichier
+    await fs.writeFile(nomFichier, stockage, (err) => {
+        if (err) console.log(err);
+        console.log("Fichier prêt.");
+    });
 
     // Fermer le navigateur
-    // await browser.close();
+    await browser.close();
     
 })();

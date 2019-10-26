@@ -1,0 +1,226 @@
+**** *demangejeremy *tweet0 
+L'automatisation marketing via les réseaux sociaux, une bonne idée pour vous ? 
+
+Je développe actuellement une suite d'outils pour augmenter la visibilité de profils ou de marques.
+
+Beta-testeurs ? RT ce tweet et je vous contacterai ;)
+
+#outils #marketing
+
+**** *demangejeremy *tweet1 
+Concevoir un bon brief en deux clics, idéal pour donner un projet aux étudiants de @DUT_MMi en design ou en Web :) cc @claudiam829 
+
+http://goodbrief.io/ 
+
+| Par @manutastic.
+
+**** *demangejeremy *tweet2 
+Bonjour @HSBC_FR 
+
+Êtes-vous sûr de la nature de notre rendez-vous à venir ? 
+
+(Lien pour modification : https://www.hsbc.fr/group-appointmentbooking-ui-web/group/fsa/web/internet/francerbb.html#cusaptboo:book …)
+
+P.S. Entre nous deux, on verra si ça colle 
+
+**** *demangejeremy *tweet3 
+Préparez-vous @BrianZiani @Chicotagada @claudiam829 et toute la team dév en @MMISarcelles 
+
+**** *demangejeremy *tweet4 
+On se voit le 8 avril @joinstationf ;)
+C'est le tout début d'une nouvelle histoire pour @PiouApp #PiouV2 
+
+**** *demangejeremy *tweet5 
+@DUT_MMi
+
+**** *demangejeremy *tweet6 
+Rendez-vous dans une heure pour les #JPOMMI @MMISarcelles ! 
+
+P.S. Attention aux travaux sur le @RERD_SNCF et pensez au @Tram11Express (descente Pierrefitte-Stains, puis Bus 268 jusqu'à l'arrêt des Sablons) 
+
+**** *demangejeremy *tweet7 
+À l'occasion des #JPOMMI @DUT_MMi, pourquoi ne pas venir nous voir pour découvrir ou s'initier aux bases de données ? Une plateforme de codage SQL 100% made in @MMISarcelles, à découvrir ce samedi 16/02 à l'@iut_ucp, site de Sarcelles. cc @claudiam829
+
+**** *demangejeremy *tweet8 
+Étudiant en @DUT_MMi, c'est le moment de tester vos compétences en UI design à travers ce petit jeu en ligne  #UIdesign
+
+**** *demangejeremy *tweet9 
+Rendez-vous au Salon de l'étudiant en Val d'Oise jusqu'à 18 h pour découvrir les formations proposées par l'@iut_ucp. Beaucoup de demande pour @MMISarcelles ! @S_Cenat @e_desaintleger
+
+**** *demangejeremy *tweet10 
+#Iut_ucp au salon de l'étudiant en Val d'Oise à l'université de Cergy-pontoise - site des Chênes.
+
+**** *demangejeremy *tweet11 
+Voici mon année en emojis :
+ #Conception
+ #Expérimentation
+ #Apprentissage
+
+#BonneAnnée #MonAnnéeEmojis
+
+**** *demangejeremy *tweet12 
+Dernier TP à rendre en bases de données avancées à l'@UQAC.
+
+Objectif : améliorer les performances des requêtes SQL en ayant de nombreuses données stockées en BDD.
+
+**** *demangejeremy *tweet13 
+Refaire la scène mythique du film #Psychose de #Hitchcock : ce serait une idée de TP d'audiovisuel pour les @MMISarcelles 1A @Vincent_Gruyer, non !?
+
+On peut également faire un remake avec @Chicotagada (je ne doute un seul instant que ça l'interessera !)...
+
+#MuseeGrevinMontreal
+
+**** *demangejeremy *tweet14 
+#Programmer4Ever
+
+Pour le cours 8INF128 (Conception et Programmation de sites Web) à l'@UQAC : écriture de 3 articles sur l'univers du Web sous #Wordpress.
+
+Voici un article complet écrit avec @chloebra_y (team #MMI - @DUT_MMi) sur le langage PHP & SQL. 
+
+https://programmer4ever.home.blog/2018/12/17/les-bases-du-developpeur-back-end-avec-php-et-sql/ …
+
+**** *demangejeremy *tweet15 
+Nouvelle application dédiée au @DUT_MMi en construction. MMI, de retour en janvier 2019 sur le web et Android.
+
+ Modélisation de la base de données.
+ Construction de l'API + back-end (en cours). / @laravelphp
+ Développement de la partie front-end. / @reactjs & @reactnative
+
+**** *demangejeremy *tweet16 
+Projet en réalisation pour le cours de sécurité des réseaux et du Web.
+
+Objectif : réaliser une application de messagerie impliquant une tierce partie, authentifier la personne envoyant le message et utiliser le chiffrement par bloc pour assurer la confidentialité du message.
+
+**** *demangejeremy *tweet17 
+Aide-moi Twitter ! 
+
+Ancienne étudiante du @DUT_MMi , je suis actuellement en 3e année du bachelor "Contenus et création numérique" à l'école W (Paris 12e). Je recherche un stage rémunéré dans le community management de novembre à mars à Paris ou aux alentours. 
+
+#stage
+
+**** *demangejeremy *tweet18 
+Deux MOOCs intéressants sur @FunMooc pour se préparer à la certification Voltaire pour les @MMISarcelles. (@J5Meyer)
+
+- Renforcer ses compétences orthographiques : http://bit.ly/2znDVEr .
+
+- Fautomaton - À la chasse aux fautoz ! : http://bit.ly/2znC0j6 .
+
+**** *demangejeremy *tweet19 
+Chicoutimi, température intérieure, 21 °C. Montage sur carte @arduino.
+
+https://github.com/demangejeremy/temperature …
+
+**** *demangejeremy *tweet20 
+Pause détente ! Création d'un jeu de mémorisation sur @arduino. Code source disponible sur @github. (Profitons du jour férié @ChicoutiMMi !)
+
+https://github.com/demangejeremy/memorisation/blob/master/memorie.ino …
+
+**** *demangejeremy *tweet21 
+Exemple d'algorithme de la suite de Fibonacci avec et sans la méthode de la programmation dynamique. Une plus grande rapidité d'exécution pour la deuxième fonction. Code réalisé en Python. 
+#Fibonacci #ProgrammationDynamique #Python
+
+**** *demangejeremy *tweet22 
+#DailyCodingProblem
+
+This problem was asked by @Uber during an interview.
+
+Given an array, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+
+My solution.
+
+https://github.com/demangejeremy/DailyCodingProblem/blob/master/Problem%232.py …
+
+**** *demangejeremy *tweet23 
+Du code plus joli avec @PrettierCode ! #Outil #Framework
+
+**** *demangejeremy *tweet24 
+Ouvrir un onglet. Être inspiré. Avec @usemuzli, un outil de @InVisionApp. 
+#Inspiration 
+http://bit.ly/2ze8Hlp 
+
+**** *demangejeremy *tweet25 
+#DailyCodingProblem
+
+This problem was recently asked by @Google.
+
+Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
+
+My solution.
+
+https://github.com/demangejeremy/DailyCodingProblem/blob/master/Problem%231.py …
+
+**** *demangejeremy *tweet26 
+Concevez du code beau et propre avec l'extension Beautify pour @brackets. #Beautify #Brackets #IDE
+
+**** *demangejeremy *tweet27 
+Filtrage automatique des contenus, rémunération des médias... Pourquoi la directive européenne sur le droit d'auteur est contestée ?  https://www.francetvinfo.fr/internet/google/filtrage-automatique-des-contenus-remuneration-des-medias-pourquoi-la-directive-europeenne-sur-le-droit-d-auteur-est-contestee_2835307.html … via @franceinfo
+
+**** *demangejeremy *tweet28 
+Soyez toujours à la recherche de l'inspiration grâce à @DragdisApp. #Inspiration 
+http://bit.ly/1iYAZOK 
+
+**** *demangejeremy *tweet29 
+Quelle police utilise ce site web ? Avec l'extension WhatFont, vous le saurez ! #Extension #WhatFont
+
+**** *demangejeremy *tweet30 
+Hey, les designers !
+
+Et si vous laissez de côté quelques instants @Illustrator pour essayer @GravitDesigner, un outil gratuit et tout aussi simple que son concurrent. 
+
+http://bit.ly/2tPITWv 
+
+#Design #GravitDesigner
+
+**** *demangejeremy *tweet31 
+Réalisez une mise en page complexe pour votre site web avec CSS Gridish, conçu par @IBM. 
+#Website #CSS #HTML http://bit.ly/2z51Zhh 
+
+**** *demangejeremy *tweet32 
+En attendant de voir apparaître ces fonctionnalités, le mieux serait de refuser systématiquement les notifications push pour éviter d'être dérangé à tout moment. #Deconnexion #SocialMedia
+
+**** *demangejeremy *tweet33 
+Une alternative à @AdobeXD ou @marvelapp ? Oui, il y a @framer. Un outil pour nos designers. 
+
+http://bit.ly/2n3aW2k 
+
+#Design #UI #Prototype #Outil
+
+**** *demangejeremy *tweet34 
+Votre site web est-il responsive ? Testez ça avec Responsinator !
+
+http://bit.ly/yMpuHA 
+
+#ResponsiveWebsite #Web
+
+**** *demangejeremy *tweet35 
+Découverte du jour. Le framework @aframevr pour créer des expériences en #VR simplement (même les débutants peuvent le découvrir avec l'A-Frame School).
+
+Petit exemple avec un musée.
+On fait ça pour présenter les prochaines JPO @MMISarcelles ?
+
+http://bit.ly/2yUx8DZ 
+
+**** *demangejeremy *tweet36 
+Trop de ressources à lire pendant les vacances ? Heureusement que @Teamkoober est là pour nous aider un peu en nous fournissant des résumés efficaces de centaines de livres ! 
+
+http://bit.ly/2lEWlsL 
+
+#Livres #Découverte #Koober
+
+**** *demangejeremy *tweet37 
+Besoin de personnaliser entièrement votre site #WordPress avec du #HTML et du #CSS ? Et si vous utilisiez un Starter Theme comme @underscoresme ?
+
+**** *demangejeremy *tweet38 
+Gérez plus facilement et plus efficacement vos projets JavaScript avec #JSUI.
+
+http://bit.ly/2lDmN66 
+
+#JavaScript #Programmation
+
+**** *demangejeremy *tweet39 
+Pour nos amis designers, voilà un bel outil de prototyping. @figmadesign 
+
+http://bit.ly/2dAWqfQ 
+
+#Outil #UI #Prototyping #Figma
+
