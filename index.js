@@ -1,34 +1,53 @@
-/////////////////////////////////////////
-//
-// Scraping tweets d'un compte Twitter
-// (Licence MIT)
-// Par @demangejeremy
-//
-/////////////////////////////////////////
+// Modules to control application life and create native browser window
+const {app, BrowserWindow} = require('electron')
+const path = require('path')
 
-var Twitter = require('twitter');
-var config = require('./config.js');
-var T = new Twitter(config);
+// Keep a global reference of the window object, if you don't, the window will
+// be closed automatically when the JavaScript object is garbage collected.
+let mainWindow
 
-// Set up your search parameters
-var params = {
-  q: '@demangejeremy',
-  count: 10,
-  result_type: 'recent',
-  lang: 'fr'
+function createWindow () {
+  // Create the browser window.
+  mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      preload: path.join(__dirname, 'preload.js')
+    }
+  })
+
+  // and load the index.html of the app.
+  mainWindow.loadFile('./interface/index.html')
+
+  // Open the DevTools.
+  // mainWindow.webContents.openDevTools()
+
+  // Emitted when the window is closed.
+  mainWindow.on('closed', function () {
+    // Dereference the window object, usually you would store windows
+    // in an array if your app supports multi windows, this is the time
+    // when you should delete the corresponding element.
+    mainWindow = null
+  })
 }
 
-// Initiate your search using the above paramaters
-T.get('search/tweets', params, function(err, data, response) {
-  // If there is no error, proceed
-  if(!err){
-    // Loop through the returned tweets
-    for(let i = 0; i < data.statuses.length; i++){
-      // Get the tweet Id from the returned data
-      let id = { id: data.statuses[i].text }
-      console.log(id);
-    }
-  } else {
-    console.log(err);
-  }
+// This method will be called when Electron has finished
+// initialization and is ready to create browser windows.
+// Some APIs can only be used after this event occurs.
+app.on('ready', createWindow)
+
+// Quit when all windows are closed.
+app.on('window-all-closed', function () {
+  // On macOS it is common for applications and their menu bar
+  // to stay active until the user quits explicitly with Cmd + Q
+  if (process.platform !== 'darwin') app.quit()
 })
+
+app.on('activate', function () {
+  // On macOS it's common to re-create a window in the app when the
+  // dock icon is clicked and there are no other windows open.
+  if (mainWindow === null) createWindow()
+})
+
+// In this file you can include the rest of your app's specific main process
+// code. You can also put them in separate files and require them here.
